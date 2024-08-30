@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>OrigamiForAll</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+	    <style>
+				@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+				@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+				@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&display=swap');
+		</style>
+
+		<style>
+	      .bd-placeholder-img {
+	        font-size: 1.125rem;
+	        text-anchor: middle;
+	        -webkit-user-select: none;
+	        -moz-user-select: none;
+	        user-select: none;
+	      }
+
+	      @media (min-width: 768px) {
+	        .bd-placeholder-img-lg {
+	          font-size: 3.5rem;
+	        }
+	      }
+
+	      .b-example-divider {
+	        width: 100%;
+	        height: 3rem;
+	        background-color: rgba(0, 0, 0, .1);
+	        border: solid rgba(0, 0, 0, .15);
+	        border-width: 1px 0;
+	        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	      }
+
+	      .b-example-vr {
+	        flex-shrink: 0;
+	        width: 1.5rem;
+	        height: 100vh;
+	      }
+
+	      .bi {
+	        vertical-align: -.125em;
+	        fill: currentColor;
+	      }
+
+	      .nav-scroller {
+	        position: relative;
+	        z-index: 2;
+	        height: 2.75rem;
+	        overflow-y: hidden;
+	      }
+
+	      .nav-scroller .nav {
+	        display: flex;
+	        flex-wrap: nowrap;
+	        padding-bottom: 1rem;
+	        margin-top: -1px;
+	        overflow-x: auto;
+	        text-align: center;
+	        white-space: nowrap;
+	        -webkit-overflow-scrolling: touch;
+	      }
+
+	      .btn-bd-primary {
+	        --bd-violet-bg: #712cf9;
+	        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+	        --bs-btn-font-weight: 600;
+	        --bs-btn-color: var(--bs-white);
+	        --bs-btn-bg: var(--bd-violet-bg);
+	        --bs-btn-border-color: var(--bd-violet-bg);
+	        --bs-btn-hover-color: var(--bs-white);
+	        --bs-btn-hover-bg: #6528e0;
+	        --bs-btn-hover-border-color: #6528e0;
+	        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+	        --bs-btn-active-color: var(--bs-btn-hover-color);
+	        --bs-btn-active-bg: #5a23c8;
+	        --bs-btn-active-border-color: #5a23c8;
+	      }
+
+	      .bd-mode-toggle {
+	        z-index: 1500;
+	      }
+
+	      .bd-mode-toggle .dropdown-menu .active .bi {
+	        display: block !important;
+	      }
+	    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+  </head>
+
+<body>
+	<div class="main">
+			<!-- Header Code Start Here -->
+		<div class="row" id="home">
+			<div class="navbar col-sm-12 col-md-12 col-lg-12 fixed-top">
+				<div class="logo">
+					<img id="logo" src="https://www.paperkawaii.com/wp-content/uploads/2018/11/origami-ninja-star-shuriken-paper-kawaii-03-440x440.jpg" style="width: 65px; height: auto; float: left; padding-top: 7px; border-radius: 50%">
+					<h3 style="float: left; padding-top: 20px;">OrigamiForAll</h3>
+				</div>
+
+				<ul>
+		            <li><a href="#home">Home</a></li>
+		            <li><a href="#about">About_Us</a></li>
+		            <li><a href="#gallery">Gallery</a></li>
+		            <li>
+		            	<a href="#categories">Categories <i class="fas fa-caret-down"></i> </a>
+		               	<ul class="dropdown">
+		            		<li><a href="#advancecatagory">Advanced Origami</a></li>
+		            		<li><a href="#AnimeOrigami">Anime & Game Origami</a></li>
+		            		<li><a href="#gallery">Origami Food</a></li>
+		            	</ul>
+		            </li>
+		            
+		            <li><a href="#contact">Contact_Us</a></li>
+		                                  
+		        </ul>
+			</div>
+				<div class="welcome"><br>
+				
+					<h1 style="font-size: 70px;">Welcome to OrigamiForAll
+					</h1>
+					<p style="font-size: 22px; width: 90%; text-align: center;">Discover the art of paper folding. Learn and create amazing origami designs with just a sheet of paper! Unlock the magic of origami with our step-by-step instructions. Whether you’re a novice or a seasoned enthusiast, explore captivating designs that bring paper to life.</p><button class="btn">Click to More</button> 
+				</div>
+				
+			</div>
+		</div>
+		<!-- Header Code End Here -->
+		<img src="https://www.origamispirit.com/wp-content/uploads/2022/06/Origami_Spirit-_Banner_2022.jpg" width="100%">
+		
+			<!-- About Code Start Here -->
+			<main class="site-main" id="main">
+						
+				<center>
+				<div id="about" class="inside-article" style="width: 70%; height: auto; text-align: justify; font-family: Lora, serif;">
+						
+							<header class="entry-header">
+								<h1 class="entry-title" itemprop="headline" style="text-align: center;">About_Us</h1>			
+							</header>
+
+							
+						<div class="entry-content" itemprop="text">
+							<div class="wp-block-image">
+								<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" src="mypic2.jpeg" alt="" class="wp-image-22790" width="250" height="auto" style="border-radius: 50%; float: right; padding: 10px;"></figure></div>
+
+
+						<p><strong>Origami Spirit will help you develop a personal creative and mindful origami practice to create joy and find personal satisfaction.</strong></p>
+						<p>Welcome to Origami Spirit! </p>
+						<p>My name is Leyla Torres, and I help people to master the peaceful art of origami (paper folding).</p>
+						<p>On this website, you will find many tutorials where I demonstrate easy ways of folding paper to make delightful creations for personal enjoyment and to share with those you love.</p>
+						<p><strong><strong>I help people interested in origami master their skills and creativity with paper folding by sharing resources, techniques, and community so that they can use origami for self-expression and as a teaching and therapy tool.</strong></strong></p>
+						<p>If you are a person who…</p>
+						<ul>
+							<li>loves to work with your hands</li>
+							<li>would like easy-to-follow origami instructions  (even for beginners)</li>
+							<li>wants to improve your origami and creative skills</li>
+							<li>wants to use&nbsp;origami as a teaching tool</li>
+							<li>appreciates the process as much as the result (or love the journey as much as the destination)</li>
+							<li>enjoys playing with colors and shapes</li>
+							<li>likes do-it-yourself projects</li>
+							<li>wants a practice that brings inspiration, and an opportunity to think creatively and calm the mind</li>
+							<li>wants to be part of a community that loves the art of paper folding…</li>
+						</ul>
+
+					</div>
+				</div>
+				</center>
+
+			</main>
+			<!-- About Code End Here -->
+
+			<!-- Gallery Code Start Here -->
+		<main>
+			</div>
+				  
+
+				  <div class="album py-5 bg-body-tertiary">
+				  	<h1 style="text-align:center; font-family: Lora, serif">OrigamiForAll Gallery</h1>
+
+				    <div class="container-fluid" style="width: 100%; height: auto;">
+
+				      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				        <div class="col" id="gallery">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2021/05/origami-houseplant-tutorial-paper-kawaii-01.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Mini Origami Pot Plants</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">I’ve had this mini origami pot plant sitting on my desk for a long time (about a year or more)... </p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2019/07/origami-honeycomb-box-tutorial-paper-kawaii-08.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Honeycomb Box</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;"> Learn how to make an origami honeycomb box. Origami organiser box is great to display items such as jewellery... </p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2019/06/origami-hexagonal-box-tutorial-paper-kawaii-05.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Hexagonal Gift Box</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">This tutorial will teach you how to make a six sided origami hexagonal gift box. Using one sheet of paper for each the box and lid.</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      	<div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://origami.me/wp-content/uploads/2023/05/bull-shark-featured.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Marine Origami by Kamran Saqi</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">My first impressions of this book were that it’s super nice and quite high-end looking. It’s quite thick with 290 pages...</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://origami.me/wp-content/uploads/2024/07/traditonal-origami-rose.jpg">
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Traditional Origami Rose</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">Looking to create a rose out of paper? Today, I’ll walk you through creating your very own origami rose...</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2016/02/origami-cake-slice-tutorial-05.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Icing / Whipped Cream Instructions</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">Learn how to make a cute little origami icing swirl or whipped cream to go on your origami cakes and other things. </p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2020/03/origami-accordion-easter-eggs-tutorial-paper-kawaii-06.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Accordion Easter Egg</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">These origami easter eggs are made using accordion folds. These origami eggs are a nice springtime ornament...</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2021/09/origami-basket-tutorial-paper-kawaii-03.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Easter Basket</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">Learn origami easter basket with this easy to follow step by step video tutorial. This basket has a handle perfect for easter eggs and gifts..</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>	
+				       	<div class="col">
+				          <div class="card shadow-sm">
+				          	<img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.paperkawaii.com/wp-content/uploads/2021/09/origami-heart-envelope-tutorial-paper-kawaii-01.jpg" >
+				            <text  x="50%" y="50%" fill="#eceeef" dy=".3em"><b>Origami Hearts</b></text>
+				            <div class="card-body">
+				              <p class="card-text" style="text-align: justify;">Learn how to fold a cute origami heart envelope for Valentine’s Day. This is easier than it looks and is a wonderful finishing touch</p>
+				              <div class="d-flex justify-content-between align-items-center">
+				                <div class="btn-group">
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				                </div>
+				                <small class="text-body-secondary">9 mins</small>
+				              </div>
+				            </div>
+				          </div>
+				        </div>		       
+				      </div>
+				    </div>
+				  </div>
+
+		</main>
+			<!-- Gallary Code End Here -->
+				<center>
+					<!-- Category Code Start Here -->
+			<div style="width:80%; height: auto;">
+				<h1 id="advancecatagory" style="text-align: center; font-family: Lora, serif;">Chines Advance Origami Catagory</h1>
+				<div style="padding-left: 10px; padding-top: 10px;">
+					<div style="float:left;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2019/03/origami-pokeball-box-tutorial-paper-kawaii-01-440x440.jpg" width="225px" height="auto">
+						<br>Origami Pokeball Box
+					</div>
+					<div style="float: left; padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2019/12/origami-3d-christmas-tree-tutorial-paper-kawaii-03-440x440.jpg" width="225px" height="auto">
+						<br>3D Origami Christmas Tree
+					</div>
+					<div style="float:left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2018/12/origami-reindeer-tutorial-paper-kawaii-06-440x440.jpg" width="225px" height="auto">
+						<br>Origami Reindeer
+					</div>
+
+					<div style="padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2015/04/origami-bunny-rabbit-tutorial-paper-kawaii-04-440x440.jpg" width="225px" height="auto">
+						<br>Origami Bunny Rabbit
+					</div>
+				</div>
+				<div style="padding-left: 10px">
+					<div style="float:left;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2019/03/origami-pokeball-box-tutorial-paper-kawaii-01-440x440.jpg" width="225px" height="auto">
+						<br>Origami Pokeball Box
+					</div>
+					<div style="float: left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2015/05/origami-chinese-thread-book-tutorial-paper-kawaii-01-768x768.jpg" width="225px" height="auto">
+						<br>Origami Chinese Thread Book
+					</div>
+					<div style="float:left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2017/07/origami-sakura-star-tutorial-paper-kawaii-02-440x440.jpg" width="225px" height="auto">
+						<br>Origami Sakura Star
+					</div>
+					<div>
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2017/08/origami-puffy-star-tutorial-paper-kawaii-02-440x440.jpg" width="225px" height="auto">
+						<br>Origami Twinkle Star
+					</div>
+				</div>
+			</div>
+			<!-- Animal and child Origami -->
+			<div style="width:80%; height: auto;" id="AnimeOrigami">
+				<h1 id="advancecatagory" style="text-align: center; font-family: Lora, serif;">Anime & Game Origami</h1>
+				<div style="padding-left: 10px; padding-top: 10px;">
+					<div style="float:left;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2019/03/origami-pokeball-box-tutorial-paper-kawaii-01-440x440.jpg" width="225px" height="auto">
+						<br>Origami Pokeball Box
+					</div>
+					<div style="float: left; padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2016/10/origami-pikachu-tutorial-paper-kawaii-04-1-440x440.jpg" width="225px" height="auto">
+						<br>Origami Pikachu
+					</div>
+					<div style="float:left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2016/01/origami-doraemon-tutorial-04-440x440.jpg" width="225px" height="auto">
+						<br>Origami Doraemon
+					</div>
+
+					<div style="padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2015/12/origami-sailor-moon-dress-06_1-440x440.jpg" width="225px" height="auto">
+						<br>Origami Sailor Moon Dress 
+					</div>
+				</div>
+				<div style="padding-left: 10px">
+					<div style="float:left;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2021/09/origami-hello-kitty-tutorial-paper-kawaii-01-440x440.jpg" width="225px" height="auto">
+						<br>Origami Hello Kitty Video
+					</div>
+					<div style="float: left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2019/02/origami-succulent-plant-tutorial-paper-kawaii-04-440x440.jpg" width="225px" height="auto">
+						<br>Mini Origami Succulent Plants
+					</div>
+					<div style="float:left;padding-left: 10px;">
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2017/12/origami-flower-pot-tutorial-paper-kawaii-01-440x440.jpg" width="225px" height="auto">
+						<br>Origami Flower Pot & Stem Holder
+					</div>
+					<div>
+						<img src="https://www.paperkawaii.com/wp-content/uploads/2017/04/origami-modular-lotus-flower-paper-kawaii-05b-440x440.jpg" width="225px" height="auto">
+						<br>Modular Origami Lotus Flower with 8 Petals
+					</div>
+				</div>
+			</div>
+
+				</center>
+
+		 	<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+		    <div class="row align-items-center g-lg-5 py-5">
+		      <div class="col-lg-7 text-center text-lg-start">
+		        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">OrigamiForAll!... Sign-Up Form</h1>
+		        <p class="col-lg-10 fs-4" style="text-align: justify;">Origami is a fascinating and accessible art form that bridges cultural heritage and modern creativity. Whether you are a beginner or an experienced folder, origami offers endless possibilities for exploration and enjoyment. Sign_Up to Learn and Create Origami!</p>
+		      </div>
+		      <div class="col-md-10 mx-auto col-lg-5">
+		        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+		          <div class="form-floating mb-3">
+		            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+		            <label for="floatingInput">Email address</label>
+		          </div>
+		          <div class="form-floating mb-3">
+		            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+		            <label for="floatingPassword">Password</label>
+		          </div>
+		          <div class="checkbox mb-3">
+		            <label>
+		              <input type="checkbox" value="remember-me"> Remember me
+		            </label>
+		          </div>
+		          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+		          <hr class="my-4">
+		          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+		        </form>
+		      </div>
+		    </div>
+  			</div>
+
+
+
+
+
+			<!-- Contact Code Start Here -->
+			<br>
+		<div class="row" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGarrjD3SOoqhP2zvB4bKEeZl89Xu-Z57siwXBkz9KzndbsATdFE5j6yTUXtHzaHeNeA&usqp=CAU'); background-repeat: no-repeat; background-size: cover;">
+			<center><h1 id="contact" style="font-family: Merienda, cursive; margin-top:20px;">Contact</h1>
+				<div style="width: 50%; font-family: Lora, serif; text-align: left;">
+					
+						<h3>Hello Dear</h3>	
+					<p>
+					Would you like to send a question, compliment, contribution, or feedback? Please use the form below to get in touch. Your words are always appreciated! <b> I read all email, but due to the volume of messages that I receive, I cannot always respond.</b>.<br><br>
+
+					Want to share your picture with us? Please send us a link to your photo or share with us on <a href="https://www.facebook.com/login">Facebook</a>.<br><br>
+					<b>
+					Want to send snail mail? Our postal address is:<br>
+					ApTech ICC Karachi, Pakistan
+					</b>
+					</p>
+				</div>
+				</center>
+				<div class="contct col-sm-6 col-md-6 col-lg-6">
+			        <h2 style="text-align: center;">Contact_Us</h2>
+			        <form action="#">
+			            <div class="form-group">
+			                <label for="name">Your Name:</label>
+			                <input type="text" id="name" name="name" required placeholder="Enter Your Name...">
+			            </div>
+			            <div class="form-group">
+			                <label for="email">Your Email:</label>
+			                <input type="email" id="email" name="email" required placeholder="Enter Your Email...">
+			            </div>
+			            <div class="form-group">
+			                <label for="message">Message:</label>
+			                <textarea id="message" name="message" required placeholder="Enter Text..."></textarea>
+			            </div>
+			            <div class="form-group">
+			                <button type="submit">Submit</button>
+			            </div>
+			        </form>
+			    </div>
+			</div>
+			 <br>
+
+			 <!-- Contact Code End Here -->
+
+			 <div>
+			 	<h1 style="text-align: center; font-family: Lora, serif;">Web Developer</h1>
+			 	<img src="pic33.jpg" width="100%;" height="auto">
+			 </div>
+			<h1 style="font-family: Lobster, sans-serif; text-align:center;">My Web Skills</h1>
+			<div id="bars" style="font-family: Lora, serif;">
+				<div class="bar" data-percent="100">
+					<h3>HTML5</h3>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="90">
+					<h3>CSS</h3>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="60">
+					<h3>JavaScript</h3>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="80">
+					<h3>BootStarp 5</h3>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+				<div class="bar" data-percent="50">
+					<h3>UI/UX</h3>
+					<canvas class="bar-circle" width="70" height="70"></canvas>
+				</div>
+			</div>	
+
+
+			<!-- Footer Code Start Here -->
+		<div class="row" style="color: white;">
+
+			  <footer class="py-3" style="background-color: #333;">
+			    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+			      <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">Home</a></li>
+			      <li class="nav-item"><a href="#about" class="nav-link px-2 text-white">About_Us</a></li>
+			      <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-white">Gallery</a></li>
+			      <li class="nav-item"><a href="#category" class="nav-link px-2 text-white">Category</a></li>
+			      <li class="nav-item"><a href="#contact" class="nav-link px-2 text-white">Contact</a></li>
+			      <li class="nav-item"><a href="#feedback" class="nav-link px-2 text-white">Feedback</a></li>
+			    </ul>
+			    <p class="text-center text-white" style="color: white;">&copy; 2024 OrigamiForAll. All rights reserved.</p>
+			  </footer>			
+		</div>
+			<!-- Footer Code End Here -->
+	</div>
+
+
+
+	<script type="text/javascript">
+		/* Credits: 
+ * https://www.developphp.com/video/JavaScript/Circular-Progress-Loader-Canvas-JavaScript-Programming-Tutorial
+ */
+
+(function() {
+	
+	var Progress = function( element ) {
+		
+		this.context = element.getContext( "2d" );
+		this.refElement = element.parentNode;
+		this.loaded = 0;
+		this.start = 1;
+		this.width = this.context.canvas.width;
+		this.height = this.context.canvas.height;
+		this.total = parseInt( this.refElement.dataset.percent, 10 );
+		this.timer = null;
+		
+		this.diff = 0;
+		
+		this.init();	
+	};
+	
+	Progress.prototype = {
+		init: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.run();	
+			}, 25);
+		},
+		run: function() {
+			var self = this;
+			
+			self.diff = ( ( self.loaded / 100 ) * Math.PI * 2 * 10 ).toFixed( 2 );	
+			self.context.clearRect( 0, 0, self.width, self.height );
+			self.context.lineWidth = 10;
+			self.context.fillStyle = "#000";
+			self.context.strokeStyle = "#d30000";
+			self.context.textAlign = "center";
+			
+			self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
+			self.context.beginPath();
+			self.context.arc( 35, 35, 30, self.start, self.diff / 10 + self.start, false );
+			self.context.stroke();
+			
+			if( self.loaded >= self.total ) {
+				clearInterval( self.timer );
+			}
+			
+			self.loaded++;
+		}
+	};
+	
+	var CircularSkillBar = function( elements ) {
+		this.bars = document.querySelectorAll( elements );
+		if( this.bars.length > 0 ) {
+			this.init();
+		}	
+	};
+	
+	CircularSkillBar.prototype = {
+		init: function() {
+			this.tick = 25;
+			this.progress();
+			
+		},
+		progress: function() {
+			var self = this;
+			var index = 0;
+			var firstCanvas = self.bars[0].querySelector( "canvas" );
+			var firstProg = new Progress( firstCanvas );
+			
+			
+			
+			var timer = setInterval(function() {
+				index++;
+					
+				var canvas = self.bars[index].querySelector( "canvas" );
+				var prog = new Progress( canvas );
+				
+				if( index == self.bars.length ) {
+						clearInterval( timer );
+				} 
+				
+			}, self.tick * 100);
+				
+		}
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		var circularBars = new CircularSkillBar( "#bars .bar" );
+	});
+	
+})();
+	</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>   
